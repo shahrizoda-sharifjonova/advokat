@@ -617,6 +617,117 @@
   transition: 300ms ease;
 }
 
+.intro {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #b0c4cf), to(#070647));
+  background: -o-linear-gradient(left, #b0c4cf 0, #070647 100%);
+  background: linear-gradient(90deg, #b0c4cf 0, #070647 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 3.125vw;
+}
+
+.intro__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.intro__img {
+  min-width: 31.40625vw;
+  width: 31.40625vw;
+  line-height: 0;
+  margin-left: -4.6875vw;
+}
+
+.intro__img img {
+  line-height: 0;
+  width: 100%;
+}
+
+.intro__title {
+  font-family: Roboto;
+  max-width: 31.7708333333vw;
+  width: 100%;
+  font-size: 3.75vw;
+  text-align: right;
+  color: #fff;
+  margin-bottom: 3.6458333333vw;
+}
+
+.intro__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 3.6458333333vw;
+}
+
+.intro__item {
+  width: calc(50% - 0.781vw);
+  padding-top: 0.78125vw;
+  position: relative;
+}
+
+.intro__item::before {
+  content: "";
+  position: absolute;
+  height: 0.1041666667vw;
+  background: #fff;
+  width: 5.2083333333vw;
+  top: 0;
+  right: 0;
+}
+
+.intro__item:nth-of-type(odd) {
+  margin-right: 1.5625vw;
+}
+
+.intro__item:first-of-type,
+.intro__item:nth-of-type(2) {
+  margin-bottom: 1.5625vw;
+}
+
+.intro__desc {
+  font-size: 1.1458333333vw;
+  text-align: right;
+  color: #fff;
+}
+
+.intro__btn {
+  margin-left: auto;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.8854166667vw;
+  color: #fff;
+  width: 19.7916666667vw;
+  height: 2.9166666667vw;
+  background: #8a1b13;
+  border-radius: 2.6041666667vw;
+}
+
 * {
   margin: 0;
   padding: 0;
