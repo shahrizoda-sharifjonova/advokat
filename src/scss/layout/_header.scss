@@ -194,6 +194,10 @@
             @include res('bottom', -3px);
             left: 0;
             transition: 300ms ease;
+            @include media(575){
+                @include resa('height', 2px);
+                @include resa('bottom', -3px);
+            }
         }
     }
     &__link{

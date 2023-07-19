@@ -44,8 +44,10 @@ ul{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
     @include media(576){
-        @include resa('max-width', 398px);
+        @include resa('max-width', 330px);
         @include resa('padding-right', 20px);
         @include resa('padding-left', 20px);
     }

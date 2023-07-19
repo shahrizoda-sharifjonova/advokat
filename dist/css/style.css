@@ -677,6 +677,8 @@ ul {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 input::-webkit-outer-spin-button,
@@ -691,7 +693,7 @@ input[type=number] {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 110.5555555556vw;
+    max-width: 91.6666666667vw;
     padding-right: 5.5555555556vw;
     padding-left: 5.5555555556vw;
   }
@@ -807,6 +809,11 @@ input[type=number] {
   .header__li:not(:last-of-type) {
     margin-right: 0;
     margin-bottom: 6.6666666667vw;
+  }
+
+  .header__li::before {
+    height: 0.5555555556vw;
+    bottom: -0.8333333333vw;
   }
 
   .header__link {
