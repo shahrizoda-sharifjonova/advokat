@@ -7,12 +7,19 @@
         align-items: flex-start;
         justify-content: space-between;
         height: 100%;
+        @include media(575){
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__img{
         @include res('min-width', 603px);
         @include res('width', 603px);
         line-height: 0;
         @include res('margin-left', -90px);
+        @include media(575){
+            order: 1;
+        }
         img{
             line-height: 0;
             width: 100%;
@@ -26,6 +33,8 @@
         text-align: right;
         color: #fff;
         @include res('margin-bottom', 70px);
+        margin-right: 0 ;
+        margin-left: auto;
     }
     &__wrapper{
         display: flex;

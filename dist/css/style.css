@@ -660,6 +660,8 @@
   text-align: right;
   color: #fff;
   margin-bottom: 3.6458333333vw;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .intro__wrapper {
@@ -945,5 +947,21 @@ input[type=number] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .intro__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .intro__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
