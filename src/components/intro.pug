@@ -2,7 +2,8 @@ mixin intro()
     .intro 
         .intro__body.container 
             .intro__img 
-                img(src="@img/girl.png", alt="" draggable="false")
+                img(src="@img/girl.png", alt="" draggable="false").disable-sm
+                img(src="@img/girl-sm.png", alt="" draggable="false").enable-sm
             .intro__right 
                 h1.intro__title Защищаю в суде ваши права #[br] и интересы
                 .intro__wrapper 
@@ -14,4 +15,5 @@ mixin intro()
                         p.intro__desc Нахожусь на связи 24/7
                     .intro__item 
                         p.intro__desc Каждый кейс веду лично
-                button(type="button" data-target="request").intro__btn.open-popup Оставьте заявку на консультацию!
+                button(type="button" data-target="request").intro__btn.open-popup.disable-sm Оставьте заявку на консультацию!
+            button(type="button" data-target="request").intro__btn.open-popup.enable-sm Оставьте заявку на консультацию!

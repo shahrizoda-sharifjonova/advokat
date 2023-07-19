@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230719202238">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230719215022">
     <title>Document</title>
   </head>
   <body> 
@@ -46,7 +46,7 @@
       <div class="main">
                 <div class="intro"> 
                   <div class="intro__body container"> 
-                    <div class="intro__img"> <picture><source srcset="img/girl.webp" type="image/webp"><img src="img/girl.png" alt="" draggable="false"></picture></div>
+                    <div class="intro__img"> <picture><source srcset="img/girl.webp" type="image/webp"><img class="disable-sm" src="img/girl.png" alt="" draggable="false"></picture><img class="enable-sm" src="img/girl-sm.png" alt="" draggable="false"></div>
                     <div class="intro__right"> 
                       <h1 class="intro__title">Защищаю в суде ваши права <br> и интересы</h1>
                       <div class="intro__wrapper"> 
@@ -63,8 +63,9 @@
                           <p class="intro__desc">Каждый кейс веду лично</p>
                         </div>
                       </div>
-                      <button class="intro__btn open-popup" type="button" data-target="request">Оставьте заявку на консультацию!</button>
+                      <button class="intro__btn open-popup disable-sm" type="button" data-target="request">Оставьте заявку на консультацию!</button>
                     </div>
+                    <button class="intro__btn open-popup enable-sm" type="button" data-target="request">Оставьте заявку на консультацию!</button>
                   </div>
                 </div>
       </div>
@@ -72,6 +73,6 @@
               <div class="footer__body container"> </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20230719202238"> </script>
+    <script src="js/app.min.js?_v=20230719215022"> </script>
   </body>
 </html>

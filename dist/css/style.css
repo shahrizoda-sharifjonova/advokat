@@ -652,6 +652,10 @@
   width: 100%;
 }
 
+.intro__img img.enable-sm {
+  display: none;
+}
+
 .intro__title {
   font-family: Roboto;
   max-width: 31.7708333333vw;
@@ -728,6 +732,11 @@
   height: 2.9166666667vw;
   background: #8a1b13;
   border-radius: 2.6041666667vw;
+  font-weight: 500;
+}
+
+.intro__btn.enable-sm {
+  display: none;
 }
 
 * {
@@ -949,6 +958,11 @@ input[type=number] {
     display: flex;
   }
 
+  .intro {
+    padding-top: 5.5555555556vw;
+    padding-bottom: 5.5555555556vw;
+  }
+
   .intro__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -963,5 +977,82 @@ input[type=number] {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    min-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 13.8888888889vw;
+  }
+
+  .intro__img img.disable-sm {
+    display: none;
+  }
+
+  .intro__img img.enable-sm {
+    display: block;
+  }
+
+  .intro__title {
+    font-size: 8.3333333333vw;
+    max-width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-bottom: 8.3333333333vw;
+  }
+
+  .intro__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .intro__item {
+    width: 100%;
+    padding-top: 2.7777777778vw;
+  }
+
+  .intro__item::before {
+    left: 0;
+    height: 0.5555555556vw;
+    width: 19.4444444444vw;
+  }
+
+  .intro__item:nth-of-type(odd) {
+    margin-right: 0;
+  }
+
+  .intro__item:first-of-type,
+  .intro__item:nth-of-type(2) {
+    margin-bottom: 2.7777777778vw;
+  }
+
+  .intro__item:not(:last-of-type) {
+    margin-bottom: 2.7777777778vw;
+  }
+
+  .intro__desc {
+    font-size: 5vw;
+    text-align: left;
+  }
+
+  .intro__btn {
+    width: 100%;
+    border-radius: 13.8888888889vw;
+    height: 11.1111111111vw;
+    font-size: 4.7222222222vw;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .intro__btn.disable-sm {
+    display: none;
+  }
+
+  .intro__btn.enable-sm {
+    display: block;
   }
 }
