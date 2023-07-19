@@ -1,0 +1,110 @@
+.header{
+    @include res('padding-top', 25px);
+    @include res('padding-bottom', 25px);
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include res('padding-bottom', 7px);
+        border-bottom: solid rgba(6,6,7,.3);
+        @include res('border-width', 1px);
+    }
+    .logo{
+        @include res('width', 560px);
+        img{
+            width: 100%;
+        }
+    }
+    &__phone{
+        display: flex;
+        align-items: center;
+        span{
+            text-decoration: underline;
+            @include res('font-size', 22px);
+            font-weight: 700;
+            color: #8a1b13;
+            transition: 300ms ease;
+            text-decoration: underline;
+            display: block;
+            &:hover{
+                text-decoration: none;
+                opacity: 0.75;
+            }
+        }
+        svg{
+            @include res('width', 32px);
+            @include res('height', 32px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include res('margin-right', 10px);
+                path{
+                    fill: #8a1b13;
+                }
+        }
+    }
+    &__bottom{
+        @include res('padding-top', 7px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include res('padding-right', 30px);
+        @include res('padding-left', 30px);
+    }
+    &__medias{
+        display: flex;
+        align-items: center;
+    }
+    &__media{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('width', 40px);
+        @include res('height', 40px);
+        border-radius: 50%;
+        border: solid #8a1b13;
+        @include res('border-width', 2px);
+        transition: 300ms ease;
+        &:hover{
+            opacity: 0.7;
+        }
+        &:not(:last-of-type){
+            @include res('margin-right', 30px);
+        }
+        img{
+            @include res('width', 20px);
+            @include res('height', 20px);
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+    &__li{
+        position: relative;
+        &:hover{
+            &::before{
+                width: 100%;
+            }
+        }
+        &:not(:last-of-type){
+            @include res('margin-right', 48px);
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 0%;
+            @include res('height', 2px);
+            background: #8a1b13;
+            @include res('bottom', -3px);
+            left: 0;
+            transition: 300ms ease;
+        }
+    }
+    &__link{
+        @include res('font-size', 16px);
+        font-weight: 700;
+        color: #8a1b13;
+        text-align: right;
+    }
+}

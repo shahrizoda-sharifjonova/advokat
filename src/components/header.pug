@@ -1,4 +1,27 @@
 mixin header()
     header.header 
         .header__nav.container
-            
+            .header__top 
+                a(href="index.html").logo 
+                    img(src="@img/logo.png", alt="" draggable="false") 
+                a(href="tel::8(995)100-88-10").header__phone
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="icon"><path d="M49.065 23.497h-.845c-3.195-7.922-10.176-13.433-18.253-13.433-8.076 0-15.054 5.51-18.252 13.433h-.845a3.18 3.18 0 0 0-3.18 3.18V37.79a3.18 3.18 0 0 0 3.18 3.183h2.196l9.45 7.738h3.78v.165c0 .58.476 1.06 1.06 1.06h5.026c.585 0 1.064-.48 1.064-1.06V47.02c0-.58-.48-1.053-1.064-1.053h-5.025c-.585 0-1.06.472-1.06 1.053v.164h-3.232l-7.92-6.475a3.18 3.18 0 0 0 1.923-2.92V26.68a3.184 3.184 0 0 0-2.504-3.107c2.945-6.452 8.743-10.857 15.403-10.857 6.667 0 12.465 4.405 15.407 10.857a3.184 3.184 0 0 0-2.504 3.106v11.11a3.18 3.18 0 0 0 3.16 3.18h3.034c1.76 0 3.18-1.42 3.18-3.18V26.68a3.176 3.176 0 0 0-3.18-3.183zm4.7 5.163a.73.73 0 0 0-.73.728v6.263a.73.73 0 0 0 .73.734c.4 0 .728-.33.728-.732V29.39a.73.73 0 0 0-.728-.73zm-47.533 0a.726.726 0 0 0-.725.728v6.263c0 .406.32.734.725.734.404 0 .732-.33.732-.732V29.39c0-.4-.33-.73-.732-.73z"/></svg>
+                    span 8 (995) 100-88-10
+            .header__bottom 
+                .header__medias 
+                    a(href="https://t.me/OBRGeR").header__media
+                        img(src="@img/telegram.svg", alt="" draggable="false")
+                    a(href="https://https://api.whatsapp.com/send/?phone=%2B79651957700&text&type=phone_number&app_absent=0").header__media
+                        img(src="@img/whatsapp.svg", alt="" draggable="false") 
+                ul.header__list 
+                    li.header__li 
+                        a(href="#!").header__link КОМПЕТЕНЦИИ
+                    li.header__li 
+                        a(href="#!").header__link СТОИМОСТЬ УСЛУГ
+                    li.header__li 
+                        a(href="#!").header__link ОБО МНЕ
+                    li.header__li 
+                        a(href="#!").header__link ОТЗЫВЫ
+                    li.header__li 
+                        a(href="#!").header__link КОНТАКТЫ
+                button(type="button" data-target="phone").header__btn.open-popup  ОБРАТНЫЙ ЗВОНОК   
