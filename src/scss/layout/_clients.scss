@@ -1,0 +1,25 @@
+.clients{
+    @include res('padding-top', 70px);
+    @include res('padding-bottom', 70px);
+    background: #e1e8ed;
+    &__title{
+        text-align: center;
+        @include res('font-size', 48px);
+        color: #20378a;
+        font-family: Roboto;
+        @include res('padding-bottom', 20px);
+    }
+    &__desc{
+        color: #20378a;
+        text-align: center;
+        @include res('font-size', 22px);
+        @include res('margin-bottom', 50px);
+    }
+    &__img{
+        svg{
+            path{
+                fill: #20378a;
+            }
+        }
+    }
+}

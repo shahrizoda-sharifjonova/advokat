@@ -1355,6 +1355,31 @@
   margin-bottom: 1.5625vw;
 }
 
+.clients {
+  padding-top: 3.6458333333vw;
+  padding-bottom: 3.6458333333vw;
+  background: #e1e8ed;
+}
+
+.clients__title {
+  text-align: center;
+  font-size: 2.5vw;
+  color: #20378a;
+  font-family: Roboto;
+  padding-bottom: 1.0416666667vw;
+}
+
+.clients__desc {
+  color: #20378a;
+  text-align: center;
+  font-size: 1.1458333333vw;
+  margin-bottom: 2.6041666667vw;
+}
+
+.clients__img svg path {
+  fill: #20378a;
+}
+
 * {
   margin: 0;
   padding: 0;
