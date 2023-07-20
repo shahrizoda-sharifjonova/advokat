@@ -1,0 +1,76 @@
+.consult{
+    @include res('padding-top', 70px);
+    @include res('padding-bottom', 70px);
+    @include media(575){
+        @include resa('padding-top', 30px);
+        @include resa('padding-bottom', 30px);
+    }
+    &__title{
+        @include res('font-size', 48px);
+        text-align: center;
+        color: #20378a;
+        margin-left: auto;
+        margin-right: auto;
+        @include res('max-width', 800px);
+        width: 100%;
+        font-family: Roboto;
+        @include res('margin-bottom', 50px);
+        @include media(575){
+            @include resa('font-size', 30px);
+            max-width: 100%;
+            @include resa('margin-bottom', 30px);
+        }
+    }
+    &__content{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        @include media(575){
+            flex-direction: column;
+        }
+    }
+    &__item{
+        width: calc(33.333% - 1.736vw);
+        @include res('padding', 30px);
+        border: solid #20378a;
+        @include res('border-width', 1px);
+        @include res('border-radius', 10px);
+        box-shadow: 0px 1.042vw 1.042vw rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @include media(575){
+            width: 100%;
+            box-shadow: 0px 2.778vw 2.778vw rgba(0, 0, 0, 0.2);
+            @include resa('padding', 20px);
+            @include resa('border-width', 1px);
+            @include resa('border-radius', 10px);
+        }
+        &:not(:last-of-type){
+            @include media(575){
+                @include resa('margin-bottom', 20px);
+            }
+        }
+    }
+    &__img{
+        @include res('margin-bottom', 20px);
+        @include res('width', 26px);
+        @include media(575){
+            @include resa('margin-bottom', 10px);
+            @include resa('width', 26px);
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__p{
+        @include res('font-size', 22px);
+        line-height: 140%;
+        color: #20378a;
+        font-weight: 700;
+        text-align: center;
+        @include media(575){
+            @include resa('font-size', 16px);
+        }
+    }
+}

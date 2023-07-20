@@ -1057,6 +1057,72 @@
   text-decoration: none;
 }
 
+.consult {
+  padding-top: 3.6458333333vw;
+  padding-bottom: 3.6458333333vw;
+}
+
+.consult__title {
+  font-size: 2.5vw;
+  text-align: center;
+  color: #20378a;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 41.6666666667vw;
+  width: 100%;
+  font-family: Roboto;
+  margin-bottom: 2.6041666667vw;
+}
+
+.consult__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.consult__item {
+  width: calc(33.333% - 1.736vw);
+  padding: 1.5625vw;
+  border: solid #20378a;
+  border-width: 0.0520833333vw;
+  border-radius: 0.5208333333vw;
+  -webkit-box-shadow: 0px 1.042vw 1.042vw rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1.042vw 1.042vw rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.consult__img {
+  margin-bottom: 1.0416666667vw;
+  width: 1.3541666667vw;
+}
+
+.consult__img img {
+  width: 100%;
+}
+
+.consult__p {
+  font-size: 1.1458333333vw;
+  line-height: 140%;
+  color: #20378a;
+  font-weight: 700;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1522,5 +1588,45 @@ input[type=number] {
   .problems__p {
     text-align: left;
     font-size: 3.6111111111vw;
+  }
+
+  .consult {
+    padding-top: 8.3333333333vw;
+    padding-bottom: 8.3333333333vw;
+  }
+
+  .consult__title {
+    font-size: 8.3333333333vw;
+    max-width: 100%;
+    margin-bottom: 8.3333333333vw;
+  }
+
+  .consult__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .consult__item {
+    width: 100%;
+    -webkit-box-shadow: 0px 2.778vw 2.778vw rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2.778vw 2.778vw rgba(0, 0, 0, 0.2);
+    padding: 5.5555555556vw;
+    border-width: 0.2777777778vw;
+    border-radius: 2.7777777778vw;
+  }
+
+  .consult__item:not(:last-of-type) {
+    margin-bottom: 5.5555555556vw;
+  }
+
+  .consult__img {
+    margin-bottom: 2.7777777778vw;
+    width: 7.2222222222vw;
+  }
+
+  .consult__p {
+    font-size: 4.4444444444vw;
   }
 }
