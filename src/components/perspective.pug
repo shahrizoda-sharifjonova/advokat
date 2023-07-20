@@ -1,0 +1,16 @@
+mixin perspective()
+    .perspective 
+        .perspective__body.container 
+            .perspective__left 
+                h2.perspective__title Хотите узнать судебную перспективу спора?
+                p.perspective__desc Оставьте заявку на консультацию #[br] и получите честную оценку судебной перспективы спора
+                p.perspective__p Изучим ситуацию, обсудим детали, исключим риски.
+            form(action="").perspective__form
+                .perspective__item 
+                    p.perspective__subtitle Ваше имя
+                    input(type="text" required).perspective__input
+                .perspective__item 
+                    p.perspective__subtitle Ваш телефон *
+                    input(type="number" required).perspective__input
+                button(type="submit").perspective__btn  Узнать судебную перспективу спора  
+                p.perspective__txt Нажимая на кнопку, вы даете согласие на обработку #[a(href="#!") персональных данных]

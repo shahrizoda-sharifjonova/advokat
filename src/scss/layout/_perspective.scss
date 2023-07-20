@@ -1,0 +1,147 @@
+.perspective{
+    @include res('padding-top', 100px);
+    @include res('padding-bottom', 100px);
+    background: linear-gradient(225deg,#b0c4cf 0,#070647 100%);
+    @include media(575){
+        @include resa('padding-top', 50px);
+        @include resa('padding-bottom', 50px);
+    }
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media(575){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__left{
+        @include res('width', 700px);
+        @include res('min-width', 700px);
+        @include media(575){
+            min-width: 100%;
+            width: 100%;
+            @include resa('margin-bottom', 30px);
+        }
+    }
+    &__title{
+        color: rgba(255, 255, 255, 0.9);
+        font-family: Roboto;
+        @include res('font-size', 48px);
+        @include res('margin-bottom', 20px);
+        @include media(575){
+            @include resa('font-size', 30px);
+            text-align: center;
+            @include resa('margin-bottom', 20px);
+        }
+        br{
+            @include media(575){
+                display: none;
+            }
+        }
+    }
+    &__desc{
+        @include res('font-size', 22px);
+        color: #fff;
+        @include res('margin-bottom', 20px);
+        @include media(575){
+            @include resa('font-size', 20px);
+            @include resa('margin-bottom', 20px);
+            text-align: center;
+        }
+        br{
+            @include media(575){
+                display: none;
+            }
+        }
+    }
+    &__p{
+        @include res('font-size', 16px);
+        color: #fff;
+        @include media(575){
+            @include resa('font-size', 14px);
+            text-align: center;
+        }
+    }
+    &__form{
+        @include res('width', 400px);
+        @include media(575){
+            width: 100%;
+        }
+    }
+    &__item{
+        @include res('margin-bottom', 20px);
+        @include media(575){
+            @include resa('margin-bottom', 15px);
+        }
+    }
+    &__subtitle{
+        @include res('font-size', 15px);
+        color: #fff;
+        @include res('margin-bottom', 10px);
+        @include media(575){
+            @include resa('font-size', 15px);
+            @include resa('margin-bottom', 10px);
+        }
+    }
+    &__input{
+        background: hsla(0,0%,100%,.3);
+        border: none;
+        @include res('padding-top', 3px);
+        @include res('padding-right', 15px);
+        @include res('padding-bottom', 3px);
+        @include res('padding-left', 15px);
+        display: flex;
+        align-items: center;
+        width: 100%;
+        @include res('height', 46px);
+        @include res('font-size', 15px);
+        color: #fff;
+        @include res('border-radius', 4px);
+        @include media(575){
+            @include resa('padding-top', 3px);
+            @include resa('padding-right', 15px);
+            @include resa('padding-bottom', 3px);
+            @include resa('padding-left', 15px);
+            @include resa('height', 32px);
+            @include resa('font-size', 13px);
+            @include resa('border-radius', 4px);
+        }
+    }
+    &__btn{
+        @include res('font-size', 15px);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('height', 46px);
+        width: 100%;
+        background: rgba(138, 27, 19, 0.9);
+        @include res('border-radius', 100px);
+        transition: 300ms ease;
+        @include res('margin-bottom', 20px);
+        @include media(575){
+            @include resa('font-size', 15px);
+            @include resa('height', 42px);
+            @include resa('border-radius', 100px);
+            @include resa('margin-bottom', 15px);
+        }
+        &:hover{
+            background: #96433d;
+        }
+    }
+    &__txt{
+        @include res('font-size', 13px);
+        color: #fff;
+        opacity: 0.6;
+        @include media(575){
+            @include resa('font-size', 13px);
+        }
+        a{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
