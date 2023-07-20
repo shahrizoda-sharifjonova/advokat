@@ -933,6 +933,130 @@
   margin-right: 1.3888888889vw;
 }
 
+.problems {
+  padding-top: 3.6458333333vw;
+  padding-bottom: 3.6458333333vw;
+  background: -o-linear-gradient(225deg, #b0c4cf 0, #070647 100%);
+  background: linear-gradient(225deg, #b0c4cf 0, #070647 100%);
+}
+
+.problems__title {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 2.5vw;
+  font-weight: 700;
+  font-family: Roboto;
+  text-align: center;
+  margin-bottom: 1.0416666667vw;
+}
+
+.problems__desc {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1458333333vw;
+  max-width: 15.625vw;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.0833333333vw;
+}
+
+.problems__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 23.9583333333vw;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5208333333vw;
+}
+
+.problems__input {
+  width: 16.6666666667vw;
+  border: none;
+  border-bottom: solid #fff;
+  border-width: 0.0520833333vw;
+  background: transparent;
+  padding-bottom: 0.5208333333vw;
+  font-size: 0.78125vw;
+  color: #fff;
+  margin-right: 0.78125vw;
+}
+
+.problems__input::-webkit-input-placeholder {
+  font-size: 0.78125vw;
+  color: #fff;
+}
+
+.problems__input::-moz-placeholder {
+  font-size: 0.78125vw;
+  color: #fff;
+}
+
+.problems__input:-ms-input-placeholder {
+  font-size: 0.78125vw;
+  color: #fff;
+}
+
+.problems__input::-ms-input-placeholder {
+  font-size: 0.78125vw;
+  color: #fff;
+}
+
+.problems__input::placeholder {
+  font-size: 0.78125vw;
+  color: #fff;
+}
+
+.problems__btn {
+  font-size: 0.78125vw;
+  color: #fff;
+  height: 2.3958333333vw;
+  width: 6.5104166667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(138, 27, 19, 0.9);
+  border-radius: 5.2083333333vw;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.problems__btn:hover {
+  background: rgba(152, 73, 68, 0.925);
+}
+
+.problems__p {
+  text-align: center;
+  font-size: 0.6770833333vw;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.problems__p a {
+  text-decoration: underline;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.problems__p a:hover {
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1325,5 +1449,78 @@ input[type=number] {
 
   .competencies__slider {
     display: block;
+  }
+
+  .problems {
+    padding-top: 13.8888888889vw;
+    padding-bottom: 13.8888888889vw;
+  }
+
+  .problems__title {
+    font-size: 9.4444444444vw;
+    margin-bottom: 5.5555555556vw;
+  }
+
+  .problems__desc {
+    font-size: 5.5555555556vw;
+    max-width: 100%;
+    margin-bottom: 6.9444444444vw;
+  }
+
+  .problems__form {
+    max-width: 100%;
+    margin-bottom: 2.7777777778vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+
+  .problems__input {
+    width: 100%;
+    border-width: 0.2777777778vw;
+    padding-bottom: 2.7777777778vw;
+    font-size: 4.1666666667vw;
+  }
+
+  .problems__input::-webkit-input-placeholder {
+    width: 100%;
+    font-size: 4.1666666667vw;
+  }
+
+  .problems__input::-moz-placeholder {
+    width: 100%;
+    font-size: 4.1666666667vw;
+  }
+
+  .problems__input:-ms-input-placeholder {
+    width: 100%;
+    font-size: 4.1666666667vw;
+  }
+
+  .problems__input::-ms-input-placeholder {
+    width: 100%;
+    font-size: 4.1666666667vw;
+  }
+
+  .problems__input::placeholder {
+    width: 100%;
+    font-size: 4.1666666667vw;
+  }
+
+  .problems__btn {
+    margin-top: 5.5555555556vw;
+    border-radius: 27.7777777778vw;
+    font-size: 4.1666666667vw;
+    height: 11.6666666667vw;
+    width: 100%;
+  }
+
+  .problems__p {
+    text-align: left;
+    font-size: 3.6111111111vw;
   }
 }

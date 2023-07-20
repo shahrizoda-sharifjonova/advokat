@@ -1,0 +1,9 @@
+mixin problems()
+    .problems 
+        .problems__body.container 
+            h2.problems__title У Вас другая проблема?
+            p.problems__desc Укажите свой номер телефона, я перезвоню Вам
+            form(action="").problems__form
+                input(type="text" placeholder="Ваш телефон *" required).problems__input
+                button(type="submit").problems__btn Жду звонка!  
+            p.problems__p Нажимая на кнопку, вы даете согласие на обработку #[a(href="#!") персональных данных]

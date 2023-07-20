@@ -1,0 +1,116 @@
+.problems{
+    @include res('padding-top', 70px);
+    @include res('padding-bottom', 70px);
+    background: linear-gradient(225deg,#b0c4cf 0,#070647 100%);
+    @include media(575){
+        @include resa('padding-top', 50px);
+        @include resa('padding-bottom', 50px);
+    }
+    &__title{
+        color: rgba(255, 255, 255, 0.9);
+        @include res('font-size', 48px);
+        font-weight: 700;
+        font-family: Roboto;
+        text-align: center;
+        @include res('margin-bottom', 20px);
+        @include media(575){
+            @include resa('font-size', 34px);
+            @include resa('margin-bottom', 20px);
+        }
+    }
+    &__desc{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.9);
+        @include res('font-size', 22px);
+        @include res('max-width', 300px);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        @include res('margin-bottom', 40px);
+        @include media(575){
+            @include resa('font-size', 20px);
+            max-width: 100%;
+            @include resa('margin-bottom', 25px);
+        }
+    }
+    &__form{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        @include res('max-width', 460px);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        @include res('margin-bottom', 10px);
+        @include media(575){
+            max-width: 100%;
+            @include resa('margin-bottom', 10px);
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+    &__input{
+        @include res('width', 320px);
+        border: none;
+        border-bottom: solid #fff;
+        @include res('border-width', 1px);
+        background: transparent;
+        @include res('padding-bottom', 10px);
+        @include res('font-size', 15px);
+        color: #fff;
+        @include res('margin-right', 15px);
+        @include media(575){
+            width: 100%;
+            @include resa('border-width', 1px);
+            @include resa('padding-bottom', 10px);
+            @include resa('font-size', 15px);
+        }
+        &::placeholder{
+            @include res('font-size', 15px);
+            color: #fff;
+            @include media(575){
+                width: 100%;
+                @include resa('font-size', 15px);
+            }
+        }
+    }
+    &__btn{
+        @include res('font-size', 15px);
+        color: #fff;
+        @include res('height', 46px);
+        @include res('width', 125px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(138, 27, 19, 0.9);
+        @include res('border-radius', 100px);
+        transition: 300ms ease;
+        @include media(575){
+            @include resa('margin-top', 20px);
+            @include resa('border-radius', 100px);
+            @include resa('font-size', 15px);
+            @include resa('height', 42px);
+            width: 100%;
+        }
+        &:hover{
+            background: rgba(152, 73, 68, 0.925);
+        }
+    }
+    &__p{
+        text-align: center;
+        @include res('font-size', 13px);
+        color: #fff;
+        opacity: 0.6;
+        @include media(575){
+            text-align: left;
+            @include resa('font-size', 13px);
+        }
+        a{
+            text-decoration: underline;
+            transition: 300ms ease;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
