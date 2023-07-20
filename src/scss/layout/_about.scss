@@ -1,0 +1,66 @@
+.about{
+    @include res('padding-top', 60px);
+    @include res('padding-bottom', 60px);
+    @include media(575){
+        @include resa('padding-top', 30px);
+        @include resa('padding-bottom', 20px);
+    }
+    &__body{
+        display: flex;
+        align-items: flex-start;
+        @include media(575){
+            flex-direction: column-reverse;
+        }
+    }
+    &__img{
+        @include res('min-width', 650px);
+        @include res('width', 650px);
+        @include res('height', 676px);
+        overflow: hidden;
+        @include res('border-radius', 10px);
+        @include res('margin-right', 50px);
+        @include media(575){
+            min-width: 100%;
+            width: 100%;
+            @include resa('height', 300px);
+            @include resa('border-radius', 10px);
+            margin-right: 0;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0px -40.593px;
+        }
+    }
+    &__right{
+        @include media(575){
+            @include resa('margin-bottom', 30px);
+        }
+    }
+    &__subtitle{
+        @include res('font-size', 40px);
+        font-style: italic;
+        font-weight: 700;
+        @include res('margin-bottom', 30px);
+        font-family: Roboto;
+        @include media(575){
+            @include resa('font-size', 32px);
+            @include resa('margin-bottom', 10px);
+        }
+    }
+    &__desc{
+        @include res('font-size', 20px);
+        font-style: italic;
+        color: #060607;
+        @include media(575){
+            @include resa('font-size', 18px);
+        }
+        &:not(:last-of-type){
+            @include res('margin-bottom', 30px);
+            @include media(575){
+                @include resa('margin-bottom', 20px);
+            }
+        }
+    }
+}
