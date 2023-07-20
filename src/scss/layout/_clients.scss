@@ -15,11 +15,4 @@
         @include res('font-size', 22px);
         @include res('margin-bottom', 50px);
     }
-    &__img{
-        svg{
-            path{
-                fill: #20378a;
-            }
-        }
-    }
 }
