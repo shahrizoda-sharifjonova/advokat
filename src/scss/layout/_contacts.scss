@@ -1,0 +1,99 @@
+.contacts{
+    @include res('padding-top', 70px);
+    @include res('padding-bottom', 70px);
+    background: #e1e8ed;
+    &__title{
+        text-align: center;
+        @include res('font-size', 48px);
+        @include res('margin-bottom', 15px);
+        color: #20378a;
+    }
+    &__desc{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: #20378a;
+        font-weight: 700;
+        @include res('font-size', 22px);
+        @include res('margin-bottom', 30px);
+    }
+    &__row{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    &__left{
+        background: #fafafa;
+        @include res('padding', 30px);
+        border: solid #20378a;
+        @include res('border-width', 1px);
+        @include res('border-radius', 10px);
+        box-shadow: 0px 1.042vw 1.042vw rgba(0, 0, 0, 0.2);
+        width: calc(50% - 1.302vw);
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include res('padding-top', 5px);
+        &:not(:last-of-type){
+            @include res('padding-bottom', 20px);
+            border-bottom: solid #00000010;
+            @include res('border-width', 1px);
+        }
+    }
+    &__subtitle{
+        @include res('font-size', 22px);
+        color: #20378a;
+        font-weight: 600;
+        @include res('margin-bottom', 10px);
+    }
+    &__adress{
+        @include res('font-size', 22px);
+    }
+    &__link{
+        @include res('font-size', 22px);
+    }
+    &__medias{
+        display: flex;
+        align-items: center;
+        @include res('margin-bottom', 15px);
+    }
+    &__media{
+        display: flex;
+        align-items: center;
+        @include res('font-size', 14px);
+        color: #8a1b13;
+        &:not(:last-of-type){
+            @include res('margin-right', 10px);
+        }
+    }
+    &__img{
+        @include res('width', 40px);
+        @include res('min-width', 40px);
+        @include res('height', 40px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: solid #8a1b13;
+        @include res('border-width', 2px);
+        @include res('margin-right', 10px);
+        img{
+            @include res('width', 20px);
+            @include res('min-width', 20px);
+        }
+    }
+    &__btn{
+        @include res('font-size', 15px);
+        color: #fff;
+        @include res('width', 230px);
+        @include res('height', 46px);
+        background: #8a1b13;
+        @include res('border-radius', 50px);
+        transition: 300ms ease;
+        &:hover{
+            background: #96433d;
+        }
+    }
+}
