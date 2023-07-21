@@ -1,0 +1,156 @@
+.reviews{
+    @include res('padding-top', 70px);
+    @include res('padding-bottom', 70px);
+    &__title{
+        @include res('font-size', 48px);
+        color: #20378a;
+        @include res('margin-bottom', 50px);
+        text-align: center;
+        font-family: Roboto;
+    }
+    &__content{
+        background: #fff;
+        border: solid #e6e6e6;
+        @include res('border-width', 30px);
+        @include res('max-width', 765px);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        @include res('padding', 20px);
+    }
+    &__subtitle{
+        @include res('font-size', 20px);
+        font-weight: 600;
+        @include res('margin-bottom', 15px);
+    }
+    &__rating{
+        display: flex;
+        align-items: center;
+        @include res('margin-bottom', 16px);
+    }
+    &__p{
+        @include res('font-size', 48px);
+        font-family: Roboto;
+        font-weight: 500;
+        @include res('margin-right', 12px);
+    }
+    &__stars{
+        display: flex;
+        align-items: center;
+    }
+    &__star{
+        @include res('width', 16px);
+        @include res('height', 16px);
+        display: flex;
+        &:not(:last-of-type){
+            @include res('margin-right', 2px);
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__txt{
+        @include res('font-size', 14px);
+        color: #999;
+        display: block;
+        @include res('margin-top', 8px);
+    }
+    &__buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('padding', 10px);
+        background: #f6f6f6;
+        @include res('border-radius', 6px);
+        @include res('margin-bottom', 24px);
+    }
+    &__info{
+        @include res('font-size', 16px);
+        @include res('margin-right', 12px);
+        font-weight: 600;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('font-size', 14px);
+        color: #fff;
+        @include res('padding-top', 12px);
+        @include res('padding-right', 16px);
+        @include res('padding-bottom', 12px);
+        @include res('padding-left', 16px);
+        background: #258ffb;
+        @include res('border-radius', 8px);
+        transition: 300ms ease;
+        &:hover{
+            background: darken($color: #258ffb, $amount: 10);
+        }
+    }
+    &__profile{
+        display: flex;
+        align-items: center;
+        @include res('margin-bottom', 16px);
+        &-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include res('font-size', 16px);
+            color: #fff;
+            background: #5798d9;
+            border-radius: 50%;
+            @include res('width', 40px);
+            @include res('min-width', 40px);
+            @include res('height', 40px);
+            @include res('margin-right', 12px);
+        }
+        &-right{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__name{
+        @include res('font-size', 16px);
+        font-weight: 600;
+        line-height: 130%;
+    }
+    &__date{
+        @include res('font-size', 14px);
+        color: #999;
+    }
+    &__desc{
+        @include res('margin-top', 8px);
+        @include res('font-size', 16px);
+        line-height: 130%;
+        @include res('margin-bottom', 50px);
+        display: block;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        @include res('font-size', 14px);
+        @include res('padding-top', 12px);
+        @include res('padding-right', 16px);
+        @include res('padding-bottom', 12px);
+        @include res('padding-left', 16px);
+        color: #198cff;
+        background: #f5f7fa;
+        width: max-content;
+        transition: 300ms ease;
+        @include res('border-radius', 8px);
+        @include res('margin-bottom', 12px);
+        &:hover{
+            background: darken($color: #f5f7fa, $amount: 5);
+        }
+    }
+    &__a{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        @include res('font-size', 10px);
+        color: #b3b3b3;
+        display: block;
+    }
+}

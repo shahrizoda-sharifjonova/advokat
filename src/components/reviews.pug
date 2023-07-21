@@ -19,16 +19,17 @@ mixin reviews()
                                     img(src="@img/star.svg", alt="" draggable="false")
                                 .reviews__star 
                                     img(src="@img/star-half.svg", alt="" draggable="false")
-                            p.reviews__txt 12 отзывов • 18 оценок
+                            a(href="#!").reviews__txt 12 отзывов • 18 оценок
                     .reviews__buttons   
                         p.reviews__info Поставьте нам оценку
                         button(type="button").reviews__btn Оставить отзыв
                     .reviews__profile 
                         .reviews__profile-img 
                             p.reviews__profile-p О
-                        p.reviews__name ольга иванова
-                        p.reviews__date 23 декабря 2022
-                    .reviews__images 
+                        .reviews__profile-right
+                            p.reviews__name ольга иванова
+                            p.reviews__date 23 декабря 2022
+                    .reviews__stars 
                         .reviews__star 
                             img(src="@img/star.svg", alt="" draggable="false")
                         .reviews__star 
