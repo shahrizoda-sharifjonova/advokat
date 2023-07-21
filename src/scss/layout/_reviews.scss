@@ -1,12 +1,20 @@
 .reviews{
     @include res('padding-top', 70px);
     @include res('padding-bottom', 70px);
+    @include media(575){
+        @include resa('padding-top', 30px);
+        @include resa('padding-bottom', 30px);
+    }
     &__title{
         @include res('font-size', 48px);
         color: #20378a;
         @include res('margin-bottom', 50px);
         text-align: center;
         font-family: Roboto;
+        @include media(575){
+            @include resa('font-size', 30px);
+            @include resa('margin-bottom', 30px);
+        }
     }
     &__content{
         background: #fff;
@@ -17,22 +25,39 @@
         margin-left: auto;
         margin-right: auto;
         @include res('padding', 20px);
+        @include media(575){
+            @include resa('border-width', 10px);
+            max-width: 100%;
+            width: 100%;
+            @include resa('padding', 15px);
+        }
     }
     &__subtitle{
         @include res('font-size', 20px);
         font-weight: 600;
         @include res('margin-bottom', 15px);
+        @include media(575){
+            @include resa('font-size', 18px);
+            @include resa('margin-bottom', 10px);
+        }
     }
     &__rating{
         display: flex;
         align-items: center;
         @include res('margin-bottom', 16px);
+        @include media(575){
+            @include resa('margin-bottom', 16px);
+        }
     }
     &__p{
         @include res('font-size', 48px);
         font-family: Roboto;
         font-weight: 500;
         @include res('margin-right', 12px);
+        @include media(575){
+            @include resa('font-size', 30px);
+            @include resa('margin-right', 12px);
+        }
     }
     &__stars{
         display: flex;
@@ -42,8 +67,15 @@
         @include res('width', 16px);
         @include res('height', 16px);
         display: flex;
+        @include media(575){
+            @include resa('width', 16px);
+            @include resa('height', 16px);
+        }
         &:not(:last-of-type){
             @include res('margin-right', 2px);
+            @include media(575){
+                @include resa('margin-right', 2px);
+            }
         }
         img{
             width: 100%;
@@ -63,11 +95,22 @@
         background: #f6f6f6;
         @include res('border-radius', 6px);
         @include res('margin-bottom', 24px);
+        @include media(575){
+            flex-direction: column;
+            @include resa('padding', 10px);
+            @include resa('border-radius', 6px);
+            @include resa('margin-bottom', 24px);
+        }
     }
     &__info{
         @include res('font-size', 16px);
         @include res('margin-right', 12px);
         font-weight: 600;
+        @include media(575){
+            @include resa('font-size', 16px);
+            margin-right: 0;
+            @include resa('margin-bottom', 12px);
+        }
     }
     &__btn{
         display: flex;
@@ -82,6 +125,14 @@
         background: #258ffb;
         @include res('border-radius', 8px);
         transition: 300ms ease;
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('padding-top', 8px);
+            @include resa('padding-right', 16px);
+            @include resa('padding-bottom', 8px);
+            @include resa('padding-left', 16px);
+            @include resa('border-radius', 8px);
+        }
         &:hover{
             background: darken($color: #258ffb, $amount: 10);
         }
@@ -90,6 +141,9 @@
         display: flex;
         align-items: center;
         @include res('margin-bottom', 16px);
+        @include media(575){
+            @include resa('margin-bottom', 16px);
+        }
         &-img{
             display: flex;
             align-items: center;
@@ -102,6 +156,13 @@
             @include res('min-width', 40px);
             @include res('height', 40px);
             @include res('margin-right', 12px);
+            @include media(575){
+                @include resa('font-size', 16px);
+                @include resa('width', 40px);
+                @include resa('min-width', 40px);
+                @include resa('height', 40px);
+                @include resa('margin-right', 12px);
+            }
         }
         &-right{
             display: flex;
@@ -112,10 +173,16 @@
         @include res('font-size', 16px);
         font-weight: 600;
         line-height: 130%;
+        @include media(575){
+            @include resa('font-size', 16px);
+        }
     }
     &__date{
         @include res('font-size', 14px);
         color: #999;
+        @include media(575){
+            @include resa('font-size', 14px);
+        }
     }
     &__desc{
         @include res('margin-top', 8px);
@@ -123,6 +190,11 @@
         line-height: 130%;
         @include res('margin-bottom', 50px);
         display: block;
+        @include media(575){
+            @include resa('margin-top', 8px);
+            @include resa('font-size', 16px);
+            @include resa('margin-bottom', 30px);
+        }
     }
     &__link{
         display: flex;
@@ -141,6 +213,16 @@
         transition: 300ms ease;
         @include res('border-radius', 8px);
         @include res('margin-bottom', 12px);
+        @include media(575){
+            @include resa('font-size', 12px);
+            @include resa('padding-top', 12px);
+            @include resa('padding-right', 16px);
+            @include resa('padding-bottom', 12px);
+            @include resa('padding-left', 16px);
+            @include resa('border-radius', 8px);
+            @include resa('margin-bottom', 12px);
+            width: 100%;
+        }
         &:hover{
             background: darken($color: #f5f7fa, $amount: 5);
         }
@@ -152,5 +234,8 @@
         @include res('font-size', 10px);
         color: #b3b3b3;
         display: block;
+        @include media(575){
+            @include resa('font-size', 10px);
+        }
     }
 }
