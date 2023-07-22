@@ -36,3 +36,22 @@ menu.addEventListener('click', (e)=>{
     list.classList.toggle('active')
     body.classList.toggle('active')
 })
+
+const btns = document.querySelectorAll('.open-popup');
+const popups = document.querySelectorAll('.popup');
+const closes = document.querySelectorAll('.popup-close');
+btns.forEach(btn=>{
+    btn.addEventListener('click', (e)=>{
+        const attr = btn.getAttribute("data-target")
+        const el = document.querySelector(`#${attr}`).classList.toggle('active')
+        body.classList.toggle('active')
+        closes.forEach(close=>{
+            close.addEventListener('click', (e)=>{
+                popups.forEach(popup=>{
+                    popup.classList.remove('active')
+                })
+                body.classList.remove('active')
+            })
+        })
+    })
+})

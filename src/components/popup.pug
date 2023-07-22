@@ -1,0 +1,29 @@
+mixin popup()
+    .popup#phone 
+        .popup-close.popup-bg 
+        form(action="").popup__body 
+            button(type="button").popup__button.popup-close
+                img(src="@img/close.svg", alt="" draggable="false")
+            h2.popup__title Укажите актуальный номер телефона и я свяжусь с Вами в ближайшее время!
+            p.popup__subtitle Ваше имя
+            input(type="text" required).popup__input 
+            p.popup__subtitle Ваш телефон *
+            input(type="number" required).popup__input 
+            button(type="submit").popup__btn Отправить заявку‍
+            p.popup__p Нажимая на кнопку, вы даете согласие на обработку #[a(href="#!") персональных данных]
+    .popup#request 
+        .popup-close.popup-bg 
+        form(action="").popup__body 
+            button(type="button").popup__button.popup-close
+                img(src="@img/close.svg", alt="" draggable="false")
+            h2.popup__title Оставьте заявку на консультацию!
+            p.popup__desc В ходе консультации изучим Вашу ситуацию, обсудим детали, исключим риски и выстроим стратегию ведения дела.
+            p.popup__subtitle Ваш телефон *
+            input(type="number" required).popup__input 
+            p.popup__subtitle Ваше имя
+            input(type="text" required).popup__input 
+            p.popup__subtitle Опишите Вашу ситуацию
+            p.popup__txt кратко (заполняется по желанию)
+            textarea(required).popup__textarea
+            button(type="submit").popup__btn Отправить заявку‍  
+            p.popup__p Нажимая на кнопку, вы даете согласие на обработку #[a(href="#!") персональных данных]
