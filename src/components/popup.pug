@@ -21,5 +21,10 @@ mixin popup()
             p.popup__subtitle Ваш телефон *
             input(type="number" required).popup__input 
             p.popup__subtitle Ваше имя
-            input(type="text" required).popup__input 
+            input(type="text" required).popup__input
+            .popup__medias 
+                a(href="https://telegram.com").popup__media
+                    img(src="@img/telegram.svg", alt="" draggable="false") 
+                a(href="https://whatsapp.com").popup__media
+                    img(src="@img/whatsapp.svg", alt="" draggable="false") 
             p.popup__p Нажимая на кнопку, вы даете согласие на обработку #[a(href="#!") персональных данных]

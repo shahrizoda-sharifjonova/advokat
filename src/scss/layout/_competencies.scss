@@ -83,7 +83,7 @@
         }
     }
     &__subtitle{
-        @include res('font-size', 22px);
+        @include res('font-size', 20px);
         font-weight: 700;
         color: #20378a;
         text-align: center;
