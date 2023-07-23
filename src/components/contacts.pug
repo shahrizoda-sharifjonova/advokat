@@ -2,12 +2,12 @@ mixin contacts()
     .contacts 
         .contacts__body.container 
             h2.contacts__title Контакты
-            p.contacts__desc Рабочие дни: с 10.00 до 20.00. #[br] Выходные дни: по предварительной записи.
+            p.contacts__desc Рабочие дни с 09 до 18 часов. #[br] Встречи по предварительной записи ( необходимо заказ пропуска )
             .contacts__row 
                 .contacts__left 
                     .contacts__item 
                         p.contacts__subtitle Адрес офиса:
-                        p.contacts__adress г. Москва, ул. Большая Очаковская, д. 5 #[br] метро Аминьевская 1,28 км #[br] метро Мичуринский проспект 1,49 км
+                        p.contacts__adress Г Москва , Пресненская набережная д. 6 стр. 2 .
                     .contacts__item 
                         p.contacts__subtitle Телефон: 
                         a(href="tel::+8-966-330-12-92").contacts__link 8-966-330-12-92
@@ -25,6 +25,7 @@ mixin contacts()
                                 .contacts__img
                                     img(src="@img/whatsapp.svg", alt="" draggable="false") 
                                 | WhatsApp
-                        button(type="button").contacts__btn Записаться на консультацию‍  
+                        button(type="button" data-target="request").contacts__btn.open-popup Записаться на консультацию‍  
                 .contacts__map 
-                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.uz/maps/213/moscow/?from=api-maps&ll=37.615294%2C55.762290&origin=jsapi_2_1_79&pt=37.464203%2C55.687446&utm_medium=mapframe&utm_source=maps&z=13" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.uz/map-widget/v1/?from=api-maps&ll=37.615294%2C55.762290&origin=jsapi_2_1_79&pt=37.464203%2C55.687446&z=13" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.uz/maps/213/moscow/?from=api-maps&ll=37.615294%2C55.762290&origin=jsapi_2_1_79&pt=37.464203%2C55.687446&utm_medium=mapframe&utm_source=maps&z=13" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.uz/map-widget/v1/?from=api-maps&ll=37.615294%2C55.762290&origin=jsapi_2_1_79&pt=37.464203%2C55.687446&z=13" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        p.contacts__p Страница носит информационный характер и не является офертой
