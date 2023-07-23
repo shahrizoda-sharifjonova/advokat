@@ -46,12 +46,12 @@
     }
     &__title{
         font-family: Roboto;
-        @include res('max-width', 610px);
+        @include res('max-width', 700px);
         width: 100%;
         @include res('font-size', 72px);
         text-align: right;
         color: #fff;
-        @include res('margin-bottom', 70px);
+        @include res('margin-bottom', 30px);
         margin-right: 0 ;
         margin-left: auto;
         @include media(575){
@@ -59,7 +59,19 @@
             max-width: 100%;
             text-align: center;
             margin-right: auto;
-            @include resa('margin-bottom', 30px);
+            @include resa('margin-bottom', 20px);
+        }
+    }
+    &__slogan{
+        @include res('font-size', 22px);
+        color: #fff;
+        font-style: italic;
+        text-align: right;
+        @include res('margin-bottom', 30px);
+        @include media(575){
+            text-align: center;
+            @include resa('font-size', 16px);
+            @include resa('margin-bottom', 20px);
         }
     }
     &__wrapper{

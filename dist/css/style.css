@@ -768,12 +768,12 @@
 }
 .intro__title {
   font-family: Roboto;
-  max-width: 31.7708333333vw;
+  max-width: 36.4583333333vw;
   width: 100%;
   font-size: 3.75vw;
   text-align: right;
   color: #fff;
-  margin-bottom: 3.6458333333vw;
+  margin-bottom: 1.5625vw;
   margin-right: 0;
   margin-left: auto;
 }
@@ -783,7 +783,21 @@
     max-width: 100%;
     text-align: center;
     margin-right: auto;
-    margin-bottom: 8.3333333333vw;
+    margin-bottom: 5.5555555556vw;
+  }
+}
+.intro__slogan {
+  font-size: 1.1458333333vw;
+  color: #fff;
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 1.5625vw;
+}
+@media (max-width: 575px) {
+  .intro__slogan {
+    text-align: center;
+    font-size: 4.4444444444vw;
+    margin-bottom: 5.5555555556vw;
   }
 }
 .intro__wrapper {
