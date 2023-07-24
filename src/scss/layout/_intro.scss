@@ -1,5 +1,5 @@
 .intro{
-    background: linear-gradient(90deg,#b0c4cf 0,#070647 100%);  
+    background: linear-gradient(90deg, #939F4A 0%, #3C5C11 100%);
     display: flex;
     @include res('padding-top', 60px);
     @include media(575){
@@ -144,7 +144,7 @@
         color: #fff;
         @include res('width', 380px);
         @include res('height', 56px);
-        background: #8a1b13;
+        background: #c4191a;
         @include res('border-radius', 50px);
         font-weight: 500;
         @include media(575){

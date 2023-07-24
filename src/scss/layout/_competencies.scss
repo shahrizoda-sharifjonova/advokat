@@ -7,7 +7,7 @@
     }
     &__title{
         text-align: center;
-        color: #20378a;
+        color: #3C5C11;
         @include res('font-size', 48px);
         @include res('margin-bottom', 50px);
         @include media(575){
@@ -44,7 +44,7 @@
         align-items: flex-start;
         justify-content: space-between;
         @include res('padding', 30px);
-        border: solid #20378a;
+        border: solid #3C5C11;
         @include res('border-width', 1px);
         @include res('border-radius', 10px);
         box-shadow: 0px 1.042vw 1.042vw rgba(0, 0, 0, 0.2);
@@ -78,14 +78,14 @@
         svg{
             width: 100%;
             path{
-                fill: #20378a;
+                fill: #3C5C11;
             }
         }
     }
     &__subtitle{
         @include res('font-size', 20px);
         font-weight: 700;
-        color: #20378a;
+        color: #3C5C11;
         text-align: center;
         font-family: Helvetica;
         @include res('margin-bottom', 20px);
@@ -127,7 +127,7 @@
         justify-content: center;
         @include res('width', 215px);
         @include res('height', 45px);
-        background: #8a1b13; 
+        background: #c4191a; 
         margin-left: auto;
         margin-right: auto;
         @include res('border-radius', 50px);
@@ -167,7 +167,7 @@
                 @include resa('width', 8px);
                 @include resa('height', 8px);
                 border-radius: 50%;
-                background: #20378a;
+                background: #3C5C11;
                 opacity: 0.5;
                 &-active{
                     opacity: 1;

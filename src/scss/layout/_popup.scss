@@ -107,7 +107,7 @@
         justify-content: center;
         @include res('font-size', 15px);
         color: #ffff;
-        background: #8a1b13;
+        background: #c4191a;
         @include res('border-radius', 50px);
         @include media(575){
             @include resa('height', 34px);

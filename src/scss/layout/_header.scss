@@ -17,7 +17,7 @@
         &-name{
             @include res('font-size', 34px);
             font-weight: 700;
-            color: #8a1b13;
+            color: #c4191a;
             @include res('margin-bottom,', 5px);
             @include media(575){
                 @include resa('font-size', 17px);
@@ -55,7 +55,7 @@
             text-decoration: underline;
             @include res('font-size', 22px);
             font-weight: 700;
-            color: #8a1b13;
+            color: #c4191a;
             transition: 300ms ease;
             text-decoration: underline;
             display: block;
@@ -81,7 +81,7 @@
                 @include resa('margin-right', 10px);
             }
                 path{
-                    fill: #8a1b13;
+                    fill: #c4191a;
                 }
         }
     }
@@ -194,7 +194,7 @@
             position: absolute;
             width: 0%;
             @include res('height', 2px);
-            background: #8a1b13;
+            background: #c4191a;
             @include res('bottom', -3px);
             left: 0;
             transition: 300ms ease;
@@ -207,7 +207,7 @@
     &__link{
         @include res('font-size', 16px);
         font-weight: 700;
-        color: #8a1b13;
+        color: #c4191a;
         text-align: right;
         display: block;
         text-transform: uppercase;
@@ -225,7 +225,7 @@
         @include res('padding-right', 20px);
         @include res('padding-bottom', 10px);
         @include res('padding-left', 20px);
-        background: #8a1b13;
+        background: #c4191a;
         color: #fff;
         @include res('border-radius', 50px);
         @include media(575){

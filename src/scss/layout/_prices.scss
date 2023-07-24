@@ -4,7 +4,7 @@
         @include resa('padding-bottom', 30px);
     }
     &__title{
-        color: #20378a;
+        color: #3C5C11;
         @include res('font-size', 48px);
         font-family: Roboto;
         text-align: center;
@@ -36,7 +36,7 @@
     }
     &__subtitle{
         @include res('font-size', 22px);
-        color: #20378a;
+        color: #3C5C11;
         font-weight: 600;
         text-align: center;
         @include res('margin-bottom', 40px);

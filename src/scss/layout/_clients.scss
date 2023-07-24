@@ -1,7 +1,7 @@
 .clients{
     @include res('padding-top', 70px);
     @include res('padding-bottom', 70px);
-    background: #e1e8ed;
+    background: #d1d1d1;
     @include media(575){
         @include resa('padding-top', 45px);
         @include resa('padding-bottom', 45px);
@@ -9,7 +9,7 @@
     &__title{
         text-align: center;
         @include res('font-size', 48px);
-        color: #20378a;
+        color: #3C5C11;
         font-family: Roboto;
         @include res('margin-bottom', 20px);
         @include media(575){
@@ -18,7 +18,7 @@
         }
     }
     &__desc{
-        color: #20378a;
+        color: #3C5C11;
         text-align: center;
         @include res('font-size', 22px);
         @include res('margin-bottom', 50px);
@@ -48,7 +48,7 @@
     &__item{
         width: calc(33.333% - 1.736vw);
         @include res('padding', 30px);
-        border: solid #20378a;
+        border: solid #3C5C11;
         @include res('border-width', 1px);
         @include res('border-radius', 10px);
         background: #fff;
@@ -84,7 +84,7 @@
         text-align: center;
         @include res('font-size', 22px);
         font-weight: 700;
-        color: #20378a;
+        color: #060607;
         @include res('margin-bottom', 30px);
         @include media(575){
             @include resa('font-size', 22px);
