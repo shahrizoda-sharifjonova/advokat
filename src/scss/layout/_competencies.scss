@@ -127,7 +127,7 @@
         justify-content: center;
         @include res('width', 215px);
         @include res('height', 45px);
-        background: #8a1b13;
+        background: #8a1b13; 
         margin-left: auto;
         margin-right: auto;
         @include res('border-radius', 50px);
