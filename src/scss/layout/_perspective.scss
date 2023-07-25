@@ -1,7 +1,7 @@
 .perspective{
     @include res('padding-top', 100px);
     @include res('padding-bottom', 100px);
-    background: linear-gradient(90deg, #3C5C11 0%, #939F4A 100%);
+    background: linear-gradient(90deg,#b0c4cf 0,#070647 100%);
     @include media(575){
         @include resa('padding-top', 50px);
         @include resa('padding-bottom', 50px);

@@ -9,7 +9,7 @@
     &__title{
         text-align: center;
         @include res('font-size', 48px);
-        color: #3C5C11;
+        color: #20378a;
         font-family: Roboto;
         @include res('margin-bottom', 20px);
         @include media(575){
@@ -18,7 +18,7 @@
         }
     }
     &__desc{
-        color: #3C5C11;
+        color: #20378a;
         text-align: center;
         @include res('font-size', 22px);
         @include res('margin-bottom', 50px);
@@ -48,7 +48,7 @@
     &__item{
         width: calc(33.333% - 1.736vw);
         @include res('padding', 30px);
-        border: solid #3C5C11;
+        border: solid #20378a;
         @include res('border-width', 1px);
         @include res('border-radius', 10px);
         background: #fff;

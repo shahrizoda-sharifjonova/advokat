@@ -10,7 +10,7 @@
         text-align: center;
         @include res('font-size', 48px);
         @include res('margin-bottom', 15px);
-        color: #3C5C11;
+        color: #20378a;
         @include media(575){
             @include resa('font-size', 30px);
             @include resa('margin-bottom', 15px);
@@ -20,7 +20,7 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        color: #3C5C11;
+        color: #20378a;
         font-weight: 700;
         @include res('font-size', 22px);
         @include res('margin-bottom', 30px);
@@ -40,7 +40,7 @@
     &__left{
         background: #fafafa;
         @include res('padding', 30px);
-        border: solid #3C5C11;
+        border: solid #20378a;
         @include res('border-width', 1px);
         @include res('border-radius', 10px);
         box-shadow: 0px 1.042vw 1.042vw rgba(0, 0, 0, 0.2);
@@ -79,7 +79,7 @@
     }
     &__subtitle{
         @include res('font-size', 22px);
-        color: #3C5C11;
+        color: #20378a;
         font-weight: 600;
         @include res('margin-bottom', 10px);
         @include media(575){
@@ -163,7 +163,7 @@
     &__map{
         width: calc(50% - 1.302vw);
         height: auto;
-        border: solid #3C5C11;
+        border: solid #20378a;
         @include res('border-width', 1px);
         @include res('border-radius', 10px);
         @include res('padding', 30px);
